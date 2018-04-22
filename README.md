@@ -199,8 +199,8 @@ for i in 0..<2
 ```swift
 override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-        if gameStarted == true{
-            if died == false{
+        if isGameStarted == true{
+            if isDied == false{
                 enumerateChildNodes(withName: "background", using: ({
                     (node, error) in
                     let taust = node as! SKSpriteNode
