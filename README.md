@@ -215,7 +215,7 @@ override func update(_ currentTime: TimeInterval) {
 }
 ```
 
->Update funktsioon kutsutakse esile ennem iga kaadri kuvamist ekraanil, mis tähendab, et kui mäng jookseb 20fps peal siis kutsutakse funktsiooni esile 20 korda. Hetkel antud koodiga me kutsume esile funktsiooni igakord liigutama taustapilti 2 piksli võrra vasakule. Taust liigub ainult pärast seda, kui isGameStarted ja isDied muutujad on kontrollitud.
+>Update funktsioon kutsutakse esile ennem iga kaadri kuvamist ekraanil, mis tähendab, et kui mäng jookseb 20fps peal siis kutsutakse funktsiooni esile 20 korda. Hetkel antud koodiga me kutsume esile funktsiooni igakord liigutama taustapilti kahe piksli võrra vasakule. Taust liigub ainult pärast seda, kui isGameStarted ja isDied muutujad on kontrollitud.
 
 13. Viimasena lisa ```didMove``` funktsiooni sisse ```createScene()```:
 ```swift
