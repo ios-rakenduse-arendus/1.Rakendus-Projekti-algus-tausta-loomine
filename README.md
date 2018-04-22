@@ -129,15 +129,15 @@ var isDied = Bool(false)
 var score = Int(0)
 /* Hetke skoori & parima skoori kuvamiseks */
 var scoreLbl = SKLabelNode()
-var highscoreLbl = SKLabelNode()
+
 /* taptoplay teksti kuvamiseks */
 var taptoplayLbl = SKLabelNode()
 /* Restart & pausi nupu näitamiseks */
 var restartBtn = SKSpriteNode()
-var pauseBtn = SKSpriteNode()
+
 /* Logo ja eksmati näitamiseks */
 var logoImg = SKSpriteNode()
-var eksmati = SKSpriteNode()
+
 /* Seinapaari näitamiseks */
 var wallPair = SKNode()
 
@@ -228,3 +228,11 @@ override func didMove(to view: SKView) {
 	* Nüüd kontrolli vasakult ülevalt, et projekti nime kõrval oleks valitud mingi seade(iPad, iPhone) 
 	* Vajuta Xcode'i üleval vasakus nurgas olevat Play nuppu. 
 >Kui kood on siiani korras peaks see käima lükkama **Simulator** akna, kus saad oma senist tööd näha jäljendatuna valitud ekraanil. Hetkel peab see kuvama ainult taustapilti.
+
+__________
+
+ÜLESANNE:
+
+* Lisa muutujatesse selleks ettenähtud kohta highscoreLbl(parim skoor tekst) samamoodi nagu panime kirja skoori
+* Lisa muutujatesse selleks ettenähtud kohta pauseBtn(pausi nupp) samamoodi nagu eelnevalt panime kirja restart
+* Lisa muutjuatesse selleks ettenähtud kohta eksmati samamoodi nagu eelnevalt tegime muutuja logoImg jaoks
