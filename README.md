@@ -198,7 +198,7 @@ for i in 0..<2
 
 ```swift
 override func update(_ currentTime: TimeInterval) {
-        // mängu alguste ning lõpu seisundit kontrollitakse ennem iga kaadri esile kutsumist
+        // Called before each frame is rendered
         if gameStarted == true{
             if died == false{
                 enumerateChildNodes(withName: "background", using: ({
