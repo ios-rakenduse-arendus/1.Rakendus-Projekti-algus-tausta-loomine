@@ -4,19 +4,21 @@
 
 ### Projekti loomine & koodi kohandamine 
 
-1. Ava **Xcode** ning tee uus projekt **iOS** mängu(**Game**) jaoks.
+1.1. Ava **Xcode** ning tee uus projekt **iOS** mängu(**Game**) jaoks.
 
-2. Anna mängule nimi, veendu et kasutad **Swift** keelt ning **SpriteKit'i** ning salvesta see endale meelepärasesse ja meeldejäävasse kausta oma arvutis.
-	* Eemalda seadme keeramine
-	* Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks oleks ajakohane ja lae alla uuendused kui on vaja
-	* Kohanda Xcode enda soovidele vastavalt kui tahad
+1.2. Anna mängule nimi, veendu et kasutad **Swift** keelt ning **SpriteKit'i** ning salvesta see endale meelepärasesse ja meeldejäävasse kausta oma arvutis.
+
+1.3. Kohandamine:
+	* Eemalda seadme keeramise funktsiooni linnuksed antud äpis
+	* Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks ajakohane ja lae alla uuendused kui on vaja
+	* Soovikorral kohanda Xcode enda soovidele vastavalt
 	
 
 <a href="https://www.youtube.com/embed/aBDtkGcQdjs
 " target="_blank"><img src="http://img.youtube.com/vi/aBDtkGcQdjs/0.jpg" 
 alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
-3. Lae siit samast repositooriumst alla mängu elementide(Assets) kaust.
+1.4. Lae siit samast repositooriumst alla mängu elementide(Assets) kaust.
 	* Paiguta sealt leitavad  ikoonid(**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
 	* Tõsta kõik ülejäänud pildid **Assets** kaustast *Assets.xcassets* kasuta
 
@@ -24,7 +26,7 @@ alt="Projekti loomine" width="240" height="180" border="10" /></a>
 >Kui sa esmalt teed *SpriteKit*’iga projecti annab Xcode ette üldise malli koos mõningate koodiridadega, mis võivad sulle kasuks tulla mängu loomisel. 
 Selleks, et luua parem arusaamine koodis alustame selles õppematerjalis praktiliselt algusest. 
 >
-4. Seega vali vasakult mängu menüüst *GameScene.swift* fail ning kustutame sealt ära kõik meile hetkel ebavajaliku koodi nii, et alles oleks ainult järgnev:
+1.5. Seega vali vasakult mängu menüüst *GameScene.swift* fail ning kustutame sealt ära kõik meile hetkel ebavajaliku koodi nii, et alles oleks ainult järgnev:
 
 ```swift
 import SpriteKit
@@ -46,7 +48,7 @@ class GameScene: SKScene {
 
 ```
 
-5. Nüüd ava *GameScene.swift*'i alt *GameViewController.swift* fail ning kustuta ka sealt ülelüügne nii et alles oleks järgnev:
+1.6. Nüüd ava *GameScene.swift*'i alt *GameViewController.swift* fail ning kustuta ka sealt ülelüügne nii et alles oleks järgnev:
 
 ```swift
 import UIKit
@@ -77,7 +79,7 @@ class GameViewController: UIViewController {
 }
 ```
 
-6. Järgmiseks vali Xcode menüüst ülevalt **File->New->File** ning vali sealt **Swift File** mall ja pane selle nimeks **GameElements**. Kustuta see, mis sinna automaatselt antud ning kirjuta asemele:
+1.7. Järgmiseks vali Xcode menüüst ülevalt **File->New->File** ning vali sealt **Swift File** mall ja pane selle nimeks **GameElements**. Kustuta see, mis sinna automaatselt antud ning kirjuta asemele:
 
 ```swift
 import SpriteKit
@@ -97,7 +99,7 @@ UInt 32 - näitab, et iga kaadris olevat füüsilist keha saab määrata kuni 32
 >Sellega et need kategooriad on nüüd ülesse seatud saab hiljem märkida mis füüsilised kehad milliste teiste füüsiliste kehadega vastastikku mõjus on ning teineteist mõjutavad ning millal mängu teavitatakse nendest sündmustest.
 
 
-7. Vali vasakult menüüst jälle *GameViewController.swift* ning otsi üles ```super.viewDidLoad()``` ning kirjuta selle alla järgmise koodi :
+1.8. Vali vasakult menüüst jälle *GameViewController.swift* ning otsi üles ```super.viewDidLoad()``` ning kirjuta selle alla järgmise koodi :
 
 ```swift
 let scene = GameScene(size: view.bounds.size)
@@ -121,7 +123,7 @@ skView.presentScene(scene)
 ##### *GameViewController* faili enam seda äppi tehes puutuma ei pea.
 ---
 
-8. Nüüd tee lahti *GameScene.swift* fail:
+1.9. Nüüd tee lahti *GameScene.swift* fail:
 	
     * Esmalt täiendame väljakutse rida nii, et see näeks välja selline: ```class GameScene: SKScene , SKPhysicsContactDelegate {```
     * Teiseks lisame ```GameScene:``` sisse meile antud mängu loomiseks vajalikud muutujad:
@@ -148,7 +150,7 @@ var wallPair = SKNode()
 var moveAndRemove = SKAction()
 ```
 
-9. Loome samasse ```GameScene:``` funktsiooni sisse, muutujate alla, uue funktsiooni nimega ```createScene``` ning lisame sinna antud koodi:
+1.10. Loome samasse ```GameScene:``` funktsiooni sisse, muutujate alla, uue funktsiooni nimega ```createScene``` ning lisame sinna antud koodi:
 ```swift
 func createScene(){
 /*Loome füüsilise keha terve ekraani ümber kasutades selleks edgeLoopFrom'i ning anname sellele väärtuse self.frame*/
@@ -180,7 +182,7 @@ func createScene(){
 
 
 
-10. Nüüd selleks, et saada ekraanile taust on vaja samasse ```createScene``` funktsiooni eelneva koodi taha kirjutada järmine riba:
+1.11. Nüüd selleks, et saada ekraanile taust on vaja samasse ```createScene``` funktsiooni eelneva koodi taha kirjutada järmine riba:
 
 ```swift
 for i in 0..<2
@@ -198,7 +200,7 @@ for i in 0..<2
 >
 >Taustale on antud eraldi nimi sest paljudel sprite’del võivad olla samad nimed ning eraldi nime väärtuse määramine annab võimaluse kutsuda esile parajasti soovitud elemendid.
 
-11. Asenda ```update``` function, mis asub ```GameScene``` sees järgneva koodiga:
+1.12. Asenda ```update``` function, mis asub ```GameScene``` sees järgneva koodiga:
 
 ```swift
 override func update(_ currentTime: TimeInterval) {
@@ -221,14 +223,14 @@ override func update(_ currentTime: TimeInterval) {
 
 >Update funktsioon kutsutakse esile ennem iga kaadri kuvamist ekraanil, mis tähendab, et kui mäng jookseb 20fps peal siis kutsutakse funktsiooni esile 20 korda. Hetkel antud koodiga me kutsume esile funktsiooni igakord liigutama taustapilti 2 piksli võrra vasakule. Taust liigub ainult pärast seda, kui isGameStarted ja isDied muutujad on kontrollitud.
 
-12. Viimasena lisa ```didMove``` funktsiooni sisse ```createScene()```:
+1.13. Viimasena lisa ```didMove``` funktsiooni sisse ```createScene()```:
 ```swift
 override func didMove(to view: SKView) {
       createScene()
     }
 ```
 
-13. PLAY:
+1.14. PLAY:
 	* Nüüd kontrolli vasakult ülevalt, et projekti nime kõrval oleks valitud mingi seade(iPad, iPhone) 
 	* Vajuta Xcode'i üleval vasakus nurgas olevat Play nuppu. 
 >Kui kood on siiani korras peaks see käima lükkama **Simulator** akna, kus saad oma senist tööd näha jäljendatuna valitud ekraanil. Hetkel peab see kuvama ainult taustapilti.
