@@ -7,6 +7,14 @@
 1. Ava **Xcode** ning tee uus projekt **iOS** mängu(**Game**) jaoks.
 
 2. Anna mängule nimi, veendu et kasutad **Swift** keelt ning **SpriteKit'i** ning salvesta see endale meelepärasesse ja meeldejäävasse kausta oma arvutis.
+	* Eemalda seadme keeramine
+	* Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks oleks ajakohane ja lae alla uuendused kui on vaja
+	* Kohanda Xcode enda soovidele vastavalt kui tahad
+	
+
+<a href="https://www.youtube.com/embed/aBDtkGcQdjs
+" target="_blank"><img src="http://img.youtube.com/vi/aBDtkGcQdjs/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 3. Lae siit samast repositooriumst alla mängu elementide(Assets) kaust.
 	* Paiguta sealt leitavad  ikoonid(**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
