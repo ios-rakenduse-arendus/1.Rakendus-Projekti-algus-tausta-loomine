@@ -1,4 +1,4 @@
-# 4.1. Rakendus:Projekti algus & tausta loomine
+# 4.1. Rakendus: Projekti algus & tausta loomine
 
 
 
