@@ -5,9 +5,9 @@
 ### 2. Anna mängule nimi, veendu et kasutad **Swift** keelt ning **SpriteKit'i** ning salvesta see endale meelepärasesse ja meeldejäävasse kausta oma arvutis.
 
 ### 3. Kohandamine:
-	* Eemalda seadme keeramise funktsiooni linnuksed antud äpis
-	* Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks ajakohane ja lae alla uuendused kui on vaja
-	* Soovikorral kohanda Xcode enda soovidele vastavalt
+* Eemalda seadme keeramise funktsiooni linnuksed antud äpis
+* Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks ajakohane ja lae alla uuendused kui on vaja
+* Soovikorral kohanda Xcode enda soovidele vastavalt
 	
 
 <a href="https://www.youtube.com/embed/aBDtkGcQdjs
@@ -15,8 +15,8 @@
 alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 ### 4. Lae siit samast repositooriumist alla mängu elementide(Assets) kaust.
-	* Paiguta sealt leitavad  ikoonid(**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
-	* Tõsta kõik ülejäänud pildid **Assets** kaustast *Assets.xcassets* kasuta
+* Paiguta sealt leitavad  ikoonid(**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
+* Tõsta kõik ülejäänud pildid **Assets** kaustast *Assets.xcassets* kasuta
 
 
 >Kui sa esmalt teed *SpriteKit*’iga projecti annab Xcode ette üldise malli koos mõningate koodiridadega, mis võivad sulle kasuks tulla mängu loomisel. 
@@ -121,8 +121,8 @@ skView.presentScene(scene)
 
 ### 9. Nüüd tee lahti *GameScene.swift* fail:
 	
-    * Esmalt täiendame väljakutse rida nii, et see näeks välja selline: ```class GameScene: SKScene , SKPhysicsContactDelegate {```
-    * Teiseks lisame ```GameScene:``` sisse meile antud mängu loomiseks vajalikud muutujad:
+* Esmalt täiendame väljakutse rida nii, et see näeks välja selline: ```class GameScene: SKScene , SKPhysicsContactDelegate {```
+* Teiseks lisame ```GameScene:``` sisse meile antud mängu loomiseks vajalikud muutujad:
 ``` 
 /* Mängu alguse ja kaotamise näitamiseks */
 var isGameStarted = Bool(false)
@@ -227,8 +227,8 @@ override func didMove(to view: SKView) {
 ```
 
 ### 14. PLAY:
-	* Nüüd kontrolli vasakult ülevalt, et projekti nime kõrval oleks valitud mingi seade(iPad, iPhone) 
-	* Vajuta Xcode'i üleval vasakus nurgas olevat Play nuppu. 
+* Nüüd kontrolli vasakult ülevalt, et projekti nime kõrval oleks valitud mingi seade(iPad, iPhone) 
+* Vajuta Xcode'i üleval vasakus nurgas olevat Play nuppu. 
 >Kui kood on siiani korras peaks see käima lükkama **Simulator** akna, kus saad oma senist tööd näha jäljendatuna valitud ekraanil. Hetkel peab see kuvama ainult taustapilti.
 
 __________
