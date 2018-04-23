@@ -231,7 +231,7 @@ override func didMove(to view: SKView) {
 
 __________
 
-ÜLESANNE:
+# ÜLESANNE:
 
 * Lisa muutujatesse selleks ettenähtud kohta highscoreLbl(parim skoor tekst) samamoodi nagu panime kirja skoori
 * Lisa muutujatesse selleks ettenähtud kohta pauseBtn(pausi nupp) samamoodi nagu eelnevalt panime kirja restart
