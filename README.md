@@ -232,6 +232,8 @@ override func didMove(to view: SKView) {
 * Vajuta Xcode'i üleval vasakus nurgas olevat Play nuppu. 
 >Kui kood on siiani korras peaks see käima lükkama **Simulator** akna, kus saad oma senist tööd näha jäljendatuna valitud ekraanil. Hetkel peab see kuvama ainult taustapilti.
 
+___
+**Tubli! Algus mängurakenduse loomiseks on tehtud. Täida nüüd siin all olevad ülesanded.**
 __________
 
 # ÜLESANNE:
