@@ -45,7 +45,7 @@ class GameScene: SKScene {
 
 ```
 
-### 6. Nüüd ava *GameScene.swift*'i alt *GameViewController.swift* fail ning kustuta ka sealt ülelüügne nii et alles oleks järgnev:
+### 6. Nüüd ava *GameScene.swift*'i alt *GameViewController.swift* fail ning kustuta ka sealt üleliigne nii, et alles oleks järgnev:
 
 ```swift
 import UIKit
