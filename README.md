@@ -10,8 +10,8 @@
 * Soovikorral kohanda Xcode enda soovidele vastavalt
 	
 
-<a href="https://www.youtube.com/embed/aBDtkGcQdjs
-" target="_blank"><img src="http://img.youtube.com/vi/aBDtkGcQdjs/0.jpg" 
+<a href="https://www.youtube.com/watch?v=ZDi18hVr7zs&feature=youtu.be
+" target="_blank"><img src="http://img.youtube.com/vi/ZDi18hVr7zs/0.jpg" 
 alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 ### 4. Lae siit samast repositooriumist alla mängu elementide(Assets) kaust.
