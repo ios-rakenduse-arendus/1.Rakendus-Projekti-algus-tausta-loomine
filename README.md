@@ -9,11 +9,19 @@
 * Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks ajakohane ja lae alla uuendused kui on vaja
 * Soovikorral kohanda Xcode enda soovidele vastavalt
 
+
+**VIDEO(1.,2.,3.):**
+
+<a href="https://www.youtube.com/watch?v=9xajtan4anU&feature=youtu.be
+" target="_blank"><img src="http://img.youtube.com/vi/9xajtan4anU/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
+
+
 ### 4. Lae siit samast repositooriumist alla mängu elementide(Assets) kaust.
 * Paiguta sealt leitavad  ikoonid(**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
 * Tõsta kõik ülejäänud pildid **Assets** kaustast *Assets.xcassets* kasuta
 
-**VIDEO:**
+**VIDEO(4.):**
 
 <a href="https://www.youtube.com/watch?v=ZDi18hVr7zs&feature=youtu.be
 " target="_blank"><img src="http://img.youtube.com/vi/ZDi18hVr7zs/0.jpg" 
@@ -76,7 +84,7 @@ class GameViewController: UIViewController {
 }
 ```
 
-### 7. Järgmiseks loo eksmati projekti kausta uus **Swift File** ja pane selle nimeks **GameElements**. Kustuta see, mis sinna automaatselt antud ning kirjuta asemele:
+### 7. Järgmiseks loo eksmati projekti kausta uus **Swift File** ja pane selle nimeks **GameElements**. Kustuta see, mis sinna automaatselt antud ning kirjutame asemele klassid füüsilistele kehadele:
 
 ```swift
 import SpriteKit
@@ -90,11 +98,14 @@ struct CollisionBitMask {
  
 extension GameScene {
 ```
->Sellega me seadsime üles klassid füüsilistele kehadele, mida me hiljem mängus looma hakkame. 
-UInt 32 - näitab, et iga kaadris olevat füüsilist keha saab määrata kuni 32 erinevasse kategooriasse, millest igaüks vastab bitt’ile bit’i maski sees.
->
->Sellega, et need kategooriad on nüüd ülesse seatud saab hiljem märkida mis füüsilised kehad milliste teiste füüsiliste kehadega vastastikku mõjus on ning millal mängu teavitatakse nendest sündmustest.
 
+> UInt 32 - näitab, et iga kaadris olevat füüsilist keha saab määrata kuni 32 erinevasse kategooriasse, millest igaüks vastab bitt’ile bit’i maski sees.
+
+**VIDEO(5.,6.,7.):**
+
+<a href="https://www.youtube.com/watch?v=K67NO-91ce0
+" target="_blank"><img src="http://img.youtube.com/vi/K67NO-91ce0/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 ### 8. Vali vasakult menüüst jälle *GameViewController.swift* ning otsi üles ```super.viewDidLoad()``` ning kirjuta selle alla järgmise koodi :
 
@@ -105,16 +116,18 @@ let skView = view as! SKView
 skView.showsFPS = false
 skView.showsNodeCount = false
 
-/*Pannes ignoreSiblingOrder väärtuseks false laseb see sul panna objekti sellisesse järjekorda nagu sa ise tahad , selle asemel, et süsteem teeks seda sinu eest automaatselt ja suvalisises järjekorras. */
-
 skView.ignoresSiblingOrder = false
-
-/* Seadista scaleMode(paneb paike mõõdistused sellest kuidas pilt ekraanil kuvatakse). .resizeFill tagab selle, et kuvatava pildi mõõtmeid muudetakse automaatselt vastavalt nii, et selle dimensioonid vastaksid alati vaate dimensioonidega. */
 
 scene.scaleMode = .resizeFill
 skView.presentScene(scene)
 ```
->Antud kood esindab GameScenes olevat objekti suurust nii et see vastaks sobivale raamistikule ennem kui see kuvatakse ekraanil.
+>Antud kood esindab GameScenes olevat objekti suurust nii, et see vastaks sobivale raamistikule ennem kui see kuvatakse ekraanil.
+
+**VIDEO(8.):**
+
+<a href="https://www.youtube.com/watch?v=zJ3PmHNTwGQ
+" target="_blank"><img src="http://img.youtube.com/vi/zJ3PmHNTwGQ/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 ---
 ##### *GameViewController* faili enam seda äppi tehes puutuma ei pea.
@@ -147,7 +160,13 @@ var wallPair = SKNode()
 var moveAndRemove = SKAction()
 ```
 
-### 10. Loome samasse ```GameScene:``` funktsiooni sisse, muutujate alla, uue funktsiooni nimega ```createScene``` ning kirjutame sinna antud koodi:
+**VIDEO(9.):**
+
+<a href="https://www.youtube.com/watch?v=Wk5ZzLgmnm0
+" target="_blank"><img src="http://img.youtube.com/vi/Wk5ZzLgmnm0/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
+
+### 10. Loome samasse ```GameScene:``` klassi sisse, muutujate alla, uue funktsiooni nimega ```createScene``` ning kirjutame sinna antud koodi:
 ```swift
 func createScene(){
 /*Loome füüsilise keha terve ekraani ümber kasutades selleks edgeLoopFrom'i ning anname sellele väärtuse self.frame*/
@@ -167,8 +186,6 @@ func createScene(){
 }
 ```
 
->Siin võtame kasutusse ka ennem loodud uues failis määratud **CollisionBitMask** klassid millega me ühendame *CollisionBitMask*’i *groundBitMask*’iga ning samaaegselt on *collisionBitMask* ning *contactTestBitMask* ühenduses *eksmatiCategory* klassiga, mis peaks tagama meie mängule teadlikuse, kui miski peaks puutuma kokku Eksmat tegelasega.
->
 >```categoryBitMask:``` mask, mis defineerib selle, millistesse kategooriatesse antud füüsiline keha kuulub
 >
 >```collisionBitMask:``` mask mis defineerib selle, millised füüsiliste kehade kategooriad võivad antud füüsilise kehaga kokku puutuda
@@ -182,6 +199,8 @@ func createScene(){
 ### 11. Nüüd selleks, et saada ekraanile taust on vaja samasse ```createScene``` funktsiooni eelneva koodi taha kirjutada järmine riba:
 
 ```swift
+
+/* Liikuva tausta illusiooon */
 for i in 0..<2
 {
             let background = SKSpriteNode(imageNamed: "taust")
@@ -192,10 +211,6 @@ for i in 0..<2
             self.addChild(background)
 }
 ```
-
->Antud kood kuvab kaks taustapilti üksteise kõrval nii, et tekiks lõpmatult edasi liikuva tausta efekt e. kaks pilti liiguvad lõpmatuseni vasakule ning kohe kui üks neist jõuuab lõppu kuvatakse koheselt ette teine jne. Mis annab illusiooni liikuvast taustast.
->
->Taustale on antud eraldi nimi sest paljudel sprite’del võivad olla samad nimed ning eraldi nime väärtuse määramine annab võimaluse kutsuda esile parajasti soovitud elemendid.
 
 ### 12. Asenda ```update``` function, mis asub ```GameScene``` sees järgneva koodiga:
 
@@ -218,8 +233,6 @@ override func update(_ currentTime: TimeInterval) {
 }
 ```
 
->Update funktsioon kutsutakse esile ennem iga kaadri kuvamist ekraanil, mis tähendab, et kui mäng jookseb 20fps peal siis kutsutakse funktsiooni esile 20 korda. Hetkel antud koodiga me kutsume esile funktsiooni igakord liigutama taustapilti kahe piksli võrra vasakule. Taust liigub ainult pärast seda, kui isGameStarted ja isDied muutujad on kontrollitud.
-
 ### 13. Viimasena lisa ```didMove``` funktsiooni sisse ```createScene()```:
 ```swift
 override func didMove(to view: SKView) {
@@ -231,6 +244,12 @@ override func didMove(to view: SKView) {
 * Nüüd kontrolli vasakult ülevalt, et projekti nime kõrval oleks valitud mingi seade(iPad, iPhone) 
 * Vajuta Xcode'i üleval vasakus nurgas olevat Play nuppu. 
 >Kui kood on siiani korras peaks see käima lükkama **Simulator** akna, kus saad oma senist tööd näha jäljendatuna valitud ekraanil. Hetkel peab see kuvama ainult taustapilti.
+
+**VIDEO(10.,11.,12.,13.,14.):**
+
+<a href="https://www.youtube.com/watch?v=iCQ4IL5l1cI
+" target="_blank"><img src="http://img.youtube.com/vi/iCQ4IL5l1cI/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 ___
 **Tubli! Algus mängurakenduse loomiseks on tehtud. Täida nüüd siin all olevad ülesanded.**
