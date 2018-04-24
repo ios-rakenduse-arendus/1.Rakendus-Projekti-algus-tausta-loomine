@@ -76,7 +76,7 @@ class GameViewController: UIViewController {
 }
 ```
 
-### 7. Järgmiseks vali Xcode menüüst ülevalt **File->New->File** ning vali sealt **Swift File** mall ja pane selle nimeks **GameElements**. Kustuta see, mis sinna automaatselt antud ning kirjuta asemele:
+### 7. Järgmiseks loo eksmati projekti kausta uus **Swift File** ja pane selle nimeks **GameElements**. Kustuta see, mis sinna automaatselt antud ning kirjuta asemele:
 
 ```swift
 import SpriteKit
