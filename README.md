@@ -122,7 +122,7 @@ skView.presentScene(scene)
 
 ### 9. Nüüd tee lahti *GameScene.swift* fail:
 	
-* Esmalt täiendame väljakutse rida nii, et see näeks välja selline: ```class GameScene: SKScene , SKPhysicsContactDelegate {```
+* Esmalt täiendame väljakutse rida nii, et lisame ```SKScene``` kõrvale komaga eraldades ```SKPhysicsContactDelegate```
 * Teiseks lisame ```GameScene:``` sisse meile antud mängu loomiseks vajalikud muutujad:
 ``` 
 /* Mängu alguse ja kaotamise näitamiseks */
@@ -147,7 +147,7 @@ var wallPair = SKNode()
 var moveAndRemove = SKAction()
 ```
 
-### 10. Loome samasse ```GameScene:``` funktsiooni sisse, muutujate alla, uue funktsiooni nimega ```createScene``` ning lisame sinna antud koodi:
+### 10. Loome samasse ```GameScene:``` funktsiooni sisse, muutujate alla, uue funktsiooni nimega ```createScene``` ning kirjutame sinna antud koodi:
 ```swift
 func createScene(){
 /*Loome füüsilise keha terve ekraani ümber kasutades selleks edgeLoopFrom'i ning anname sellele väärtuse self.frame*/
