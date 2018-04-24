@@ -8,15 +8,16 @@
 * Eemalda seadme keeramise funktsiooni linnuksed antud äpis
 * Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks ajakohane ja lae alla uuendused kui on vaja
 * Soovikorral kohanda Xcode enda soovidele vastavalt
-	
-
-<a href="https://www.youtube.com/watch?v=ZDi18hVr7zs&feature=youtu.be
-" target="_blank"><img src="http://img.youtube.com/vi/ZDi18hVr7zs/0.jpg" 
-alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 ### 4. Lae siit samast repositooriumist alla mängu elementide(Assets) kaust.
 * Paiguta sealt leitavad  ikoonid(**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
 * Tõsta kõik ülejäänud pildid **Assets** kaustast *Assets.xcassets* kasuta
+
+**VIDEO:**
+
+<a href="https://www.youtube.com/watch?v=ZDi18hVr7zs&feature=youtu.be
+" target="_blank"><img src="http://img.youtube.com/vi/ZDi18hVr7zs/0.jpg" 
+alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 
 >Kui sa esmalt teed *SpriteKit*’iga projecti annab Xcode ette üldise malli koos mõningate koodiridadega, mis võivad sulle kasuks tulla mängu loomisel. 
