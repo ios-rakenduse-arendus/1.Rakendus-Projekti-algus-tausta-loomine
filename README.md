@@ -260,3 +260,5 @@ __________
 * Lisa muutujatesse selleks ettenähtud kohta highscoreLbl(parim skoor tekst) samamoodi nagu panime kirja skoori
 * Lisa muutujatesse selleks ettenähtud kohta pauseBtn(pausi nupp) samamoodi nagu eelnevalt panime kirja restart
 * Lisa muutjuatesse selleks ettenähtud kohta eksmati samamoodi nagu eelnevalt tegime muutuja logoImg jaoks
+
+* Teadmiste kontrolliks täida ülesanne *[Learningapps](https://learningapps.org/watch?v=pihhevmit18)* lehel. 
