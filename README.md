@@ -1,6 +1,6 @@
-# 4.1. Rakendus: Projekti algus & tausta loomine
+# 4.1. Rakendus: Projekti algus ja tausta loomine
 
-### 1. Ava **Xcode** ning tee uus projekt **iOS** mängu(**Game**) jaoks.
+### 1. Ava **Xcode** ning tee uus projekt **iOS** mängu (**Game**) jaoks.
 
 ### 2. Anna mängule nimi, veendu et kasutad **Swift** keelt ning **SpriteKit'i** ning salvesta see endale meelepärasesse ja meeldejäävasse kausta oma arvutis.
 
@@ -10,18 +10,18 @@
 * Soovikorral kohanda Xcode enda soovidele vastavalt
 
 
-**VIDEO(1.,2.,3.):**
+**VIDEO (1.,2.,3.):**
 
 <a href="https://www.youtube.com/watch?v=9xajtan4anU&feature=youtu.be
 " target="_blank"><img src="http://img.youtube.com/vi/9xajtan4anU/0.jpg" 
 alt="Projekti loomine" width="240" height="180" border="10" /></a>
 
 
-### 4. Lae siit samast repositooriumist alla mängu elementide(Assets) kaust.
-* Paiguta sealt leitavad  ikoonid(**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
+### 4. Lae siit samast repositooriumist alla mängu elementide (Assets) kaust.
+* Paiguta sealt leitavad  ikoonid (**AppIcon** kaustas) Xcode projekti sees olevasse *Assets.xcassets* kausta selleks ettenähtud kohtadesse vastavalt nimele.
 * Tõsta kõik ülejäänud pildid **Assets** kaustast *Assets.xcassets* kasuta
 
-**VIDEO(4.):**
+**VIDEO (4.):**
 
 <a href="https://www.youtube.com/watch?v=ZDi18hVr7zs&feature=youtu.be
 " target="_blank"><img src="http://img.youtube.com/vi/ZDi18hVr7zs/0.jpg" 
@@ -101,7 +101,7 @@ extension GameScene {
 
 > UInt 32 - näitab, et iga kaadris olevat füüsilist keha saab määrata kuni 32 erinevasse kategooriasse, millest igaüks vastab bitt’ile bit’i maski sees.
 
-**VIDEO(5.,6.,7.):**
+**VIDEO (5.,6.,7.):**
 
 <a href="https://www.youtube.com/watch?v=K67NO-91ce0
 " target="_blank"><img src="http://img.youtube.com/vi/K67NO-91ce0/0.jpg" 
@@ -123,7 +123,7 @@ skView.presentScene(scene)
 ```
 >Antud kood esindab GameScenes olevat objekti suurust nii, et see vastaks sobivale raamistikule ennem kui see kuvatakse ekraanil.
 
-**VIDEO(8.):**
+**VIDEO (8.):**
 
 <a href="https://www.youtube.com/watch?v=zJ3PmHNTwGQ
 " target="_blank"><img src="http://img.youtube.com/vi/zJ3PmHNTwGQ/0.jpg" 
@@ -160,7 +160,7 @@ var wallPair = SKNode()
 var moveAndRemove = SKAction()
 ```
 
-**VIDEO(9.):**
+**VIDEO (9.):**
 
 <a href="https://www.youtube.com/watch?v=Wk5ZzLgmnm0
 " target="_blank"><img src="http://img.youtube.com/vi/Wk5ZzLgmnm0/0.jpg" 
@@ -241,11 +241,11 @@ override func didMove(to view: SKView) {
 ```
 
 ### 14. PLAY:
-* Nüüd kontrolli vasakult ülevalt, et projekti nime kõrval oleks valitud mingi seade(iPad, iPhone) 
+* Nüüd kontrolli vasakult ülevalt, et projekti nime kõrval oleks valitud mingi seade (iPad, iPhone) 
 * Vajuta Xcode'i üleval vasakus nurgas olevat Play nuppu. 
 >Kui kood on siiani korras peaks see käima lükkama **Simulator** akna, kus saad oma senist tööd näha jäljendatuna valitud ekraanil. Hetkel peab see kuvama ainult taustapilti.
 
-**VIDEO(10.,11.,12.,13.,14.):**
+**VIDEO (10.,11.,12.,13.,14.):**
 
 <a href="https://www.youtube.com/watch?v=iCQ4IL5l1cI
 " target="_blank"><img src="http://img.youtube.com/vi/iCQ4IL5l1cI/0.jpg" 
@@ -257,8 +257,8 @@ __________
 
 # ÜLESANNE:
 
-* Lisa muutujatesse selleks ettenähtud kohta highscoreLbl(parim skoor tekst) samamoodi nagu panime kirja skoori
-* Lisa muutujatesse selleks ettenähtud kohta pauseBtn(pausi nupp) samamoodi nagu eelnevalt panime kirja restart
+* Lisa muutujatesse selleks ettenähtud kohta highscoreLbl (parim skoor tekst) samamoodi nagu panime kirja skoori
+* Lisa muutujatesse selleks ettenähtud kohta pauseBtn (pausi nupp) samamoodi nagu eelnevalt panime kirja restart
 * Lisa muutjuatesse selleks ettenähtud kohta eksmati samamoodi nagu eelnevalt tegime muutuja logoImg jaoks
 
 * Teadmiste kontrolliks täida ülesanne *[Learningapps](https://learningapps.org/watch?v=pihhevmit18)* lehel. 
