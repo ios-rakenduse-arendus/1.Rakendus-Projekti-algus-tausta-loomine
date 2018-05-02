@@ -5,9 +5,9 @@
 ### 2. Anna mängule nimi, veendu et kasutad **Swift** keelt ning **SpriteKit'i** ning salvesta see endale meelepärasesse ja meeldejäävasse kausta oma arvutis.
 
 ### 3. Kohandamine:
-* Eemalda seadme keeramise funktsiooni linnuksed antud äpis
-* Kontrolli, Xcode menüüst *Preference*'i alt et kõik oleks ajakohane ja lae alla uuendused kui on vaja
-* Soovikorral kohanda Xcode enda soovidele vastavalt
+* Eemalda seadme keeramise funktsiooni linnukesed antud äpis
+* Kontrolli, Xcode menüüst *Preference*'i alt, et kõik oleks ajakohane ja lae alla uuendused, kui on vaja
+* Soovikorral kohanda Xcode endale meelepäraseks
 
 
 **VIDEO (1.,2.,3.):**
